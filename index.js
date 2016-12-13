@@ -28,6 +28,24 @@ app.get('/home',function(req,res)
 });
 
 
+/**
+ * @brief RESTITUISCE LA PAGINA AIUTO
+ */
+app.get('/aiuto',function(req,res)
+{
+    res.sendFile(__dirname + '/aiuto.html');
+});
+
+
+/**
+ * @brief RESTITUISCE LA PAGINA ORDINA
+ */
+app.get('/ordina',function(req,res)
+{
+    res.sendFile(__dirname + '/ordina.html'); 
+});
+
+
 
 //INFORMARE L'UTENTE DELLA PORTA CHE SI UTILIZZA E DELL'URL DELLA PAGINA DI LOGIN
 
